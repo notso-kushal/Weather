@@ -4,10 +4,10 @@ Future getDistricts() async {
   final dio = Dio();
 
   try {
-    final response = await dio.get("https://www.nepallocation.com.np/api/v1/district/list",
+    final response = await dio.get("NEPAL FIRST LOCATION API",
         options: Options(headers: {
-          "Content-Type": "application/json",
-          "Authorization": "Bearer oNBT8UY-LWlBc-Izt4wPFuaE",
+          "Content-Type": "CONTENT TYPE",
+          "Authorization": "AUTHORIZATION KEY",
         }));
     var distri = response.data['data'];
     return distri;
