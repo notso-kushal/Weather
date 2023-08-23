@@ -102,7 +102,7 @@ class _StartState extends State<Start> {
 
       try {
         final response = await dio.get(
-          "https://api.openweathermap.org/data/2.5/weather?q=$currentAddress&appid=55eb6cd8fdfbb62d95316b9ea6eb08ad",
+          "OPEN WEATHER API",
         );
         if (response.statusCode == 200) {
           var results = response.data;
